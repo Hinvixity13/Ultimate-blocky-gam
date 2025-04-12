@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+/* HUD */
+#hud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Crosshair */
+#crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  user-select: none;
+}
+
+/* Hotbar UI */
+#hotbar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.slot {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.slot.selected {
+  border-color: yellow;
+}

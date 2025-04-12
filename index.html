@@ -22,10 +22,15 @@
         </div>
     </div>
 
-    <!-- Load Three.js from CDN -->
-    <script src="https://unpkg.com/three@0.153.0/build/three.min.js"></script>
+    <!-- Load Three.js via ES Modules -->
+    <script type="module">
+        import * as THREE from "https://cdn.skypack.dev/three";
+        import { PointerLockControls } from "https://cdn.skypack.dev/three/examples/js/controls/PointerLockControls.js";
+        window.THREE = THREE;
+        window.PointerLockControls = PointerLockControls;
+    </script>
 
     <!-- Load your game code -->
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

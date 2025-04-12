@@ -1,6 +1,3 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js";
-import { PointerLockControls } from "https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/controls/PointerLockControls.js";
-
 // === CONFIG ===
 const BLOCK_SIZE = 1;
 const WORLD_WIDTH = 16;
@@ -41,7 +38,7 @@ directionalLight.position.set(100, 100, 50).normalize();
 scene.add(directionalLight);
 
 // === CONTROLS ===
-const controls = new PointerLockControls(camera, document.body);
+const controls = new THREE.PointerLockControls(camera, document.body);
 document.body.addEventListener("click", () => controls.lock());
 scene.add(controls.getObject());
 
@@ -154,3 +151,4 @@ function animate() {
 }
 
 animate();
+

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ultimate Block Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- HUD Elements -->
-    <div id="hud">
-      <div id="hotbar">
-        <div class="slot selected" data-block="0"></div>
-        <div class="slot" data-block="1"></div>
-        <div class="slot" data-block="2"></div>
-        <div class="slot" data-block="3"></div>
-        <div class="slot" data-block="4"></div>
-        <div class="slot" data-block="5"></div>
-        <div class="slot" data-block="6"></div>
-        <div class="slot" data-block="7"></div>
-        <div class="slot" data-block="8"></div>
-      </div>
-      <div id="crosshair">+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Blocky Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="hotbar">
+            <div class="slot selected" data-block="0"></div>
+            <div class="slot" data-block="1"></div>
+            <div class="slot" data-block="2"></div>
+            <div class="slot" data-block="3"></div>
+            <div class="slot" data-block="4"></div>
+            <div class="slot" data-block="5"></div>
+            <div class="slot" data-block="6"></div>
+            <div class="slot" data-block="7"></div>
+            <div class="slot" data-block="8"></div>
+            <div class="slot" data-block="9"></div>
+        </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/PointerLockControls.js"></script>
-    <script src="main.js" type="module"></script>
-  </body>
+    <!-- Load Three.js from CDN -->
+    <script src="https://unpkg.com/three@0.153.0/build/three.min.js"></script>
+
+    <!-- Load your game code -->
+    <script src="main.js"></script>
+</body>
 </html>
